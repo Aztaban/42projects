@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/21 11:14:16 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/22 17:46:44 by mjusta           ###   ########.fr       */
+/*   Created: 2025/05/22 15:23:54 by mjusta            #+#    #+#             */
+/*   Updated: 2025/05/22 15:25:44 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <libft.h>
 
-void	run_char_tests(void);
-void	run_string_tests(void);
-void	run_memory_tests(void);
-
-int	main(void)
+size_t	ft_strlen(const char *s)
 {
-	printf("\n------ libft Function Tests ------\n");
-	printf("----------------------------------\n");
-	
-	run_char_tests();
-	run_string_tests();
-	run_memory_tests();
+	size_t	i;
 
-	printf("\n----------------------------------\n");
-	return (0);
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }

@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/21 11:14:16 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/22 17:46:44 by mjusta           ###   ########.fr       */
+/*   Created: 2025/05/22 18:53:42 by mjusta            #+#    #+#             */
+/*   Updated: 2025/05/22 18:57:38 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <libft.h>
 
-void	run_char_tests(void);
-void	run_string_tests(void);
-void	run_memory_tests(void);
-
-int	main(void)
+void	ft_bzero(void *s, size_t n)
 {
-	printf("\n------ libft Function Tests ------\n");
-	printf("----------------------------------\n");
-	
-	run_char_tests();
-	run_string_tests();
-	run_memory_tests();
-
-	printf("\n----------------------------------\n");
-	return (0);
+	ft_memset(s, '\0', n);
 }
