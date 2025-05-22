@@ -10,11 +10,11 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = test_libft
+NAME = libft_test
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -I..
 
-SRC = $(wildcard ../ft_*.c) main.c
+SRC = $(wildcard ../ft_*.c) $(wildcard tests/*.c) $(wildcard utils/*.c) main.c
 
 all: $(NAME)
 
@@ -23,5 +23,7 @@ $(NAME): $(SRC)
 
 clean:
 	rm -f $(NAME)
+
+re: clean all
 
 .PHONY: all clean
