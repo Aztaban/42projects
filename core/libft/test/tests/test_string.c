@@ -12,15 +12,7 @@ void	test_strlen(void)
 void    run_string_tests(void)
 {   
     printf("\n[ String tests ]\n");
-    printf("----------------------------------\n");
+    print_line();
 	test_strlen();
-	printf("----------------------------------\n");
-	
-	printf("----------------------------------\n");
-	
-	printf("----------------------------------\n");
-	
-	printf("----------------------------------\n");
-	
-	printf("----------------------------------\n");
+	print_line();
 }

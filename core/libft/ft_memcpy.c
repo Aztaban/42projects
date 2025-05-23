@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/21 11:14:16 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/23 15:20:33 by mjusta           ###   ########.fr       */
+/*   Created: 2025/05/23 11:45:23 by mjusta            #+#    #+#             */
+/*   Updated: 2025/05/23 12:03:12 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "utils/utils.h"
+#include <libft.h>
 
-void	run_char_tests(void);
-void	run_string_tests(void);
-void	run_memory_tests(void);
-
-int	main(void)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	printf("\n------------ libft Function Tests ------------\n");
-	print_line();
-	
-	run_char_tests();
-	run_string_tests();
-	run_memory_tests();
+	unsigned char		*d;
+	const unsigned char	*s;
+	size_t				i;	
 
-	printf("\n");
-	print_line();
-	return (0);
+	d = dest;
+	s = src;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
 }

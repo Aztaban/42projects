@@ -6,7 +6,7 @@
 #    By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/20 11:21:19 by mjusta            #+#    #+#              #
-#    Updated: 2025/05/21 10:42:16 by mjusta           ###   ########.fr        #
+#    Updated: 2025/05/23 14:39:22 by mjusta           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,10 +14,23 @@ NAME = libft.a
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-AR = ar rcs
 RM = rm -f
+AR = ar rcs
+# r = Replace or insert .o files into archive (if it doesn't exist, create it)
+# c = Don't warn if the archive had to be created
+# s = Create an archive index (time saving)
 
-SRC = $(wildcard ft_*.c)
+SRC = ft_isalpha.c \
+		ft_isdigit.c \
+		ft_isalnum.c \
+		ft_isascii.c \
+		ft_isprint.c \
+		ft_strlen.c \
+		ft_memset.c \
+		ft_bzero.c \
+		ft_memcpy.c \
+		ft_memmove.c
+		
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
@@ -35,8 +48,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
-
-NAME:
-	@echo $(NAME)
 
 .PHONY: all clean fclean re NAME

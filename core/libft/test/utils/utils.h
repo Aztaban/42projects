@@ -7,5 +7,6 @@
 #include <string.h>
 
 void	print_result(const char *desc, int passed);
+void	print_line(void);
 
 #endif

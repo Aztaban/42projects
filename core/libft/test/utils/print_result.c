@@ -2,5 +2,10 @@
 
 void	print_result(const char *desc, int passed)
 {
-	printf("Test %-30s: %s\n", desc, passed ? "✅ OK" : "❌ FAIL");
+	printf("Test %-40s: %s\n", desc, passed ? "✅ OK" : "❌ FAIL");
+}
+
+void 	print_line(void)
+{
+	printf("----------------------------------------------\n");
 }

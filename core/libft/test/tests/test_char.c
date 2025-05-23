@@ -1,5 +1,3 @@
-#include "../../libft.h"
-#include <ctype.h>
 #include "../utils/utils.h"
 
 void	test_isalpha(void)
@@ -45,15 +43,15 @@ void	test_isprint(void)
 void    run_char_tests(void)
 {   
     printf("\n[ Character tests ]\n");
-    printf("----------------------------------\n");
+    print_line();
 	test_isalpha();
-	printf("----------------------------------\n");
+	print_line();
 	test_isdigit();
-	printf("----------------------------------\n");
+	print_line();
 	test_isalnum();
-	printf("----------------------------------\n");
+	print_line();
 	test_isascii();	
-	printf("----------------------------------\n");
+	print_line();
 	test_isprint();
-	printf("----------------------------------\n");
+	print_line();
 }
