@@ -5,22 +5,18 @@ void	test_memset(void)
 	unsigned char buf1[20];
 	unsigned char buf2[20];
 
-	// Test 1
 	ft_memset(buf1, 'A', 10);
 	memset(buf2, 'A', 10);
 	print_result("ft_memset 10 bytes to 'A'", memcmp(buf1, buf2, 10) == 0);
 
-	// Test 2
 	ft_memset(buf1, 0x00, 20);
 	memset(buf2, 0x00, 20);
 	print_result("ft_memset 20 bytes to 0x00", memcmp(buf1, buf2, 20) == 0);
 
-	// Test 3
 	ft_memset(buf1, 255, 5);
 	memset(buf2, 255, 5);
 	print_result("ft_memset first 5 bytes to 255", memcmp(buf1, buf2, 5) == 0);
 
-	// Test 4
 	ft_memset(buf1, 'X', 0);
 	memset(buf2, 'X', (size_t)0);
 	print_result("ft_memset 0 bytes (n = 0)", memcmp(buf1, buf2, 20) == 0);

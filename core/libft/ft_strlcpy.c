@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/21 11:14:16 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/24 15:25:52 by mjusta           ###   ########.fr       */
+/*   Created: 2025/05/24 11:12:47 by mjusta            #+#    #+#             */
+/*   Updated: 2025/05/24 11:37:45 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "utils/utils.h"
+#include <libft.h>
 
-void	run_char_tests(void);
-void	run_string_tests(void);
-void	run_memory_tests(void);
-void	run_conversion_tests(void);
-
-int	main(void)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	printf("\n------------ libft Function Tests ------------\n");
-	print_line();
-	
-	run_char_tests();
-	run_string_tests();
-	run_memory_tests();
-	run_conversion_tests();
+	size_t	i;
 
-	printf("\n");
-	print_line();
-	return (0);
+	i = 0;
+	if (dstsize > 0)
+	{
+		while (i < dstsize - 1 && src[i] != '\0')
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+	}
+	return (ft_strlen(src));
 }

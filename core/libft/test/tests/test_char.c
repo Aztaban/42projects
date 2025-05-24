@@ -1,43 +1,49 @@
 #include "../utils/utils.h"
 
-void	test_isalpha(void)
+void static	run_char_test(const char *desc, int (*ft_func)(int), int (*std_func)(int), int input)
 {
-	print_result("ft_isalpha('a')", ft_isalpha('a') == !!isalpha('a'));
-	print_result("ft_isalpha('Z')", ft_isalpha('Z') == !!isalpha('Z'));
-	print_result("ft_isalpha('1')", ft_isalpha('1') == !!isalpha('1'));
-	print_result("ft_isalpha('%')", ft_isalpha('%') == !!isalpha('%'));
+	int result = ft_func(input) == !!std_func(input); // normalize std_func result
+	print_result(desc, result);
 }
 
-void	test_isdigit(void)
+void test_isalpha(void)
 {
-	print_result("ft_isdigit('0')", ft_isdigit('0') == !!isdigit('0'));
-	print_result("ft_isdigit('5')", ft_isdigit('5') == !!isdigit('5'));
-	print_result("ft_isdigit('a')", ft_isdigit('a') == !!isdigit('a'));
-	print_result("ft_isdigit('@')", ft_isdigit('@') == !!isdigit('@'));
+	run_char_test("ft_isalpha('a')", ft_isalpha, isalpha, 'a');
+	run_char_test("ft_isalpha('Z')", ft_isalpha, isalpha, 'Z');
+	run_char_test("ft_isalpha('1')", ft_isalpha, isalpha, '1');
+	run_char_test("ft_isalpha('%')", ft_isalpha, isalpha, '%');
 }
 
-void	test_isalnum(void)
+void test_isdigit(void)
 {
-	print_result("ft_isalnum('0')", ft_isalnum('0') == !!isalnum('0'));
-	print_result("ft_isalnum('C')", ft_isalnum('C') == !!isalnum('C'));
-	print_result("ft_isalnum(' ')", ft_isalnum(' ') == !!isalnum(' '));
-	print_result("ft_isalnum('@')", ft_isalnum('@') == !!isalnum('@'));
+	run_char_test("ft_isdigit('0')", ft_isdigit, isdigit, '0');
+	run_char_test("ft_isdigit('5')", ft_isdigit, isdigit, '5');
+	run_char_test("ft_isdigit('a')", ft_isdigit, isdigit, 'a');
+	run_char_test("ft_isdigit('@')", ft_isdigit, isdigit, '@');
 }
 
-void	test_isascii(void)
+void test_isalnum(void)
 {
-	print_result("ft_isascii(48)", ft_isascii(48) == !!isascii(48));
-	print_result("ft_isascii(200)", ft_isascii(200) == !!isascii(200));
-	print_result("ft_isascii(0)", ft_isascii(0) == !!isascii(0));
-	print_result("ft_isascii(127)", ft_isascii(127) == !!isascii(127));
+	run_char_test("ft_isalnum('0')", ft_isalnum, isalnum, '0');
+	run_char_test("ft_isalnum('C')", ft_isalnum, isalnum, 'C');
+	run_char_test("ft_isalnum(' ')", ft_isalnum, isalnum, ' ');
+	run_char_test("ft_isalnum('@')", ft_isalnum, isalnum, '@');
 }
 
-void	test_isprint(void)
+void test_isascii(void)
 {
-	print_result("ft_isprint('a')", ft_isprint('a') == !!isprint('a'));
-	print_result("ft_isprint(' ')", ft_isprint(' ') == !!isprint(' '));
-	print_result("ft_isprint('0')", ft_isprint('0') == !!isprint('0'));
-	print_result("ft_isprint('\\n')", ft_isprint('\n') == !!isprint('\n'));
+	run_char_test("ft_isascii(48)", ft_isascii, isascii, 48);
+	run_char_test("ft_isascii(200)", ft_isascii, isascii, 200);
+	run_char_test("ft_isascii(0)", ft_isascii, isascii, 0);
+	run_char_test("ft_isascii(127)", ft_isascii, isascii, 127);
+}
+
+void test_isprint(void)
+{
+	run_char_test("ft_isprint('a')", ft_isprint, isprint, 'a');
+	run_char_test("ft_isprint(' ')", ft_isprint, isprint, ' ');
+	run_char_test("ft_isprint('0')", ft_isprint, isprint, '0');
+	run_char_test("ft_isprint('\\n')", ft_isprint, isprint, '\n');
 }
 
 void    run_char_tests(void)

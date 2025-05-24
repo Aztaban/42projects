@@ -1,34 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/21 11:14:16 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/24 15:25:52 by mjusta           ###   ########.fr       */
+/*   Created: 2025/05/24 12:19:56 by mjusta            #+#    #+#             */
+/*   Updated: 2025/05/24 12:48:05 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "utils/utils.h"
+#include <libft.h>
 
-void	run_char_tests(void);
-void	run_string_tests(void);
-void	run_memory_tests(void);
-void	run_conversion_tests(void);
-
-int	main(void)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	printf("\n------------ libft Function Tests ------------\n");
-	print_line();
+	size_t	dlen;
+	size_t	slen;
+	size_t	i;
 	
-	run_char_tests();
-	run_string_tests();
-	run_memory_tests();
-	run_conversion_tests();
-
-	printf("\n");
-	print_line();
-	return (0);
+	dlen = 0;
+	slen = ft_strlen(src);
+	while (dst[dlen] && dlen < dstsize)
+		dlen++;
+	if (dlen < dstsize)
+	{
+		i = 0;
+		while (src[i] && (dlen + i + 1) < dstsize)
+		{
+			dst[dlen + i] = src[i];
+			i++;
+		}
+		dst[dlen + i] = '\0'; 
+	}
+	return (dlen + slen);
 }
