@@ -1,34 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/21 11:14:16 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/24 15:25:52 by mjusta           ###   ########.fr       */
+/*   Created: 2025/05/24 15:46:04 by mjusta            #+#    #+#             */
+/*   Updated: 2025/05/25 17:19:01 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "utils/utils.h"
+#include "libft.h"
 
-void	run_char_tests(void);
-void	run_string_tests(void);
-void	run_memory_tests(void);
-void	run_conversion_tests(void);
-
-int	main(void)
+static int	ft_isspace(int c)
 {
-	printf("\n------------ libft Function Tests ------------\n");
-	print_line();
-	
-	run_char_tests();
-	run_string_tests();
-	run_memory_tests();
-	run_conversion_tests();
+	return ((c >= 9 && c <= 13) || c == 32);
+}
 
-	printf("\n");
-	print_line();
-	return (0);
+int	ft_atoi(const char *nptr)
+{
+	long	result;
+	int		sign;
+
+	result = 0;
+	sign = 1;
+	while (ft_isspace(*nptr))
+		nptr++;
+	if (*nptr == '+' || *nptr == '-')
+	{
+		if (*nptr == '-')
+			sign = -sign;
+		nptr++;
+	}
+	while (ft_isdigit(*nptr))
+	{
+		result = result * 10 + (*nptr - '0');
+		nptr++;
+	}
+	return (sign * result);
 }

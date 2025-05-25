@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/22 17:25:44 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/25 17:19:29 by mjusta           ###   ########.fr       */
+/*   Created: 2025/05/24 15:41:50 by mjusta            #+#    #+#             */
+/*   Updated: 2025/05/25 17:19:56 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+static int	ft_islower(int c)
 {
-	unsigned char	*ptr;
-	size_t			i;
+	return (c >= 97 && c <= 122);
+}
 
-	ptr = (unsigned char *)s;
-	i = 0;
-	while (i < n)
-	{
-		ptr[i] = (unsigned char)c;
-		i++;
-	}
-	return (s);
+int	ft_toupper(int c)
+{
+	if (ft_islower(c))
+		c -= 32;
+	return (c);
 }

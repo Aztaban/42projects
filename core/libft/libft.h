@@ -6,7 +6,7 @@
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 11:05:46 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/24 13:54:50 by mjusta           ###   ########.fr       */
+/*   Updated: 2025/05/24 15:41:00 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strdup(const char *s1);
 
 // conversion
-int	ft_toupper(int c);
-int	ft_tolower(int c);
-int	ft_atoi(const char *nptr);
-	   
+int		ft_toupper(int c);
+int		ft_tolower(int c);
+int		ft_atoi(const char *nptr);
+
 // memory functions
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);

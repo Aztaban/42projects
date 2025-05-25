@@ -6,7 +6,7 @@
 #    By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/20 11:21:19 by mjusta            #+#    #+#              #
-#    Updated: 2025/05/24 12:21:08 by mjusta           ###   ########.fr        #
+#    Updated: 2025/05/24 18:10:23 by mjusta           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,12 @@ SRC = ft_isalpha.c \
 		ft_memcpy.c \
 		ft_memmove.c \
 		ft_strlcpy.c \
-		ft_strlcat.c
+		ft_strlcat.c \
+		ft_toupper.c \
+		ft_tolower.c \
+		ft_atoi.c \
+		ft_strchr.c \
+		ft_strrchr.c
 		
 OBJ = $(SRC:.c=.o)
 

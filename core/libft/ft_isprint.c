@@ -6,11 +6,11 @@
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 11:26:18 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/22 11:28:14 by mjusta           ###   ########.fr       */
+/*   Updated: 2025/05/25 17:19:18 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
