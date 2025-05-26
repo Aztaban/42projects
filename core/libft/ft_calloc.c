@@ -6,7 +6,7 @@
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 14:26:54 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/26 14:56:23 by mjusta           ###   ########.fr       */
+/*   Updated: 2025/05/27 01:53:29 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 	size_t	total;
 
-	total = count *size;
+	total = count * size;
 	ptr = malloc(total);
 	if (!ptr)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 11:05:46 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/26 18:31:39 by mjusta           ###   ########.fr       */
+/*   Updated: 2025/05/27 01:52:55 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 // char functions
 int		ft_isalnum(int c);
