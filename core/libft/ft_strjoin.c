@@ -6,7 +6,7 @@
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 18:08:41 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/27 18:42:50 by mjusta           ###   ########.fr       */
+/*   Updated: 2025/05/28 14:57:01 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	len1;
 	size_t	len2;
 
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
 	result = (char *)malloc(len1 + len2 + 1);
 	if (!result)
 		return (NULL);
