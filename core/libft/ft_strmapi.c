@@ -6,7 +6,7 @@
 /*   By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 01:07:10 by mjusta            #+#    #+#             */
-/*   Updated: 2025/05/28 01:21:57 by mjusta           ###   ########.fr       */
+/*   Updated: 2025/05/28 02:33:14 by mjusta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 
 	if (!s || !f)
-		return(NULL);
+		return (NULL);
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!str)
 		return (NULL);

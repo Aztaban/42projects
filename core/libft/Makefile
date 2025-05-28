@@ -6,7 +6,7 @@
 #    By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/20 11:21:19 by mjusta            #+#    #+#              #
-#    Updated: 2025/05/26 19:24:50 by mjusta           ###   ########.fr        #
+#    Updated: 2025/05/28 03:34:42 by mjusta           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ SRC = ft_isalpha.c \
 		ft_atoi.c \
 		ft_strchr.c \
 		ft_strrchr.c \
+		ft_strnstr.c \
 		ft_strncmp.c \
 		ft_strdup.c \
 		ft_memchr.c \
@@ -45,7 +46,14 @@ SRC = ft_isalpha.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
-		ft_putnbr_fd.c 
+		ft_putnbr_fd.c \
+		ft_itoa.c \
+		ft_split.c \
+		ft_striteri.c \
+		ft_strjoin.c \
+		ft_strmapi.c \
+		ft_strtrim.c \
+		ft_substr.c
 		
 OBJ = $(SRC:.c=.o)
 
