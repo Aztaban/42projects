@@ -6,7 +6,7 @@
 #    By: mjusta <mjusta@student.42prague.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/20 11:21:19 by mjusta            #+#    #+#              #
-#    Updated: 2025/05/28 17:42:15 by mjusta           ###   ########.fr        #
+#    Updated: 2025/05/29 14:49:39 by mjusta           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,8 +87,8 @@ fclean: clean
 
 re: fclean all
 
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(BONUS_SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJ) $(BONUS_OBJ)
-
 .PHONY: all bonus clean fclean re
+
+#so:
+#	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(BONUS_OBJ)
+#	gcc -nostartfiles -shared -o libft.so $(OBJ) $(BONUS_OBJ)
