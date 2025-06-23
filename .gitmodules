@@ -1,3 +1,6 @@
 [submodule "core/02_FT_PRINTF"]
 	path = core/02_FT_PRINTF
 	url = git@github.com:Aztaban/ft_printf.git
+[submodule "core/03_GET_NEXT_LINE"]
+	path = core/03_GET_NEXT_LINE
+	url = git@github.com:Aztaban/get_next_line.git
