@@ -1,0 +1,3 @@
+[submodule "core/02_FT_PRINTF"]
+	path = core/02_FT_PRINTF
+	url = git@github.com:Aztaban/ft_printf.git
