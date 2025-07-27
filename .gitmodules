@@ -1,0 +1,18 @@
+[submodule "00_LIBFT_CORE"]
+	path = 00_LIBFT_CORE
+	url = git@github.com:Aztaban/LIBFT_42.git
+[submodule "02_PRINT_F"]
+	path = 02_PRINT_F
+	url = git@github.com:Aztaban/ft_printf.git
+[submodule "01_LIBFT"]
+	path = 01_LIBFT
+	url = git@github.com:Aztaban/libft.git
+[submodule "04_SO_LONG"]
+	path = 04_SO_LONG
+	url = git@github.com:Aztaban/so_long.git
+[submodule "03_GET_NEXT_LINE"]
+	path = 03_GET_NEXT_LINE
+	url = git@github.com:Aztaban/get_next_line.git
+[submodule "05_PIPEX"]
+	path = 05_PIPEX
+	url = git@github.com:Aztaban/pipex.git
