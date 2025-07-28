@@ -48,4 +48,4 @@ git submodule update --init --recursive
 
 ## 👤 Author
 
-[Martin Justa](https://github.com/aztaban)
+Created and maintained by [Martin Justa](https://github.com/aztaban) as part of the 42 school curriculum.
