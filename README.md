@@ -37,7 +37,7 @@ To get started, open the corresponding project directory and read its `README.md
 To properly clone the repository **with all submodules**, use:
 
 ```bash
-git clone --recurse-submodules https://github.com/your-username/42projects.git
+git clone --recurse-submodules https://github.com/Aztaban/42projects.git
 ```
 
 If you've already cloned it without submodules:
