@@ -16,3 +16,6 @@
 [submodule "05_PIPEX"]
 	path = 05_PIPEX
 	url = git@github.com:Aztaban/pipex.git
+[submodule "06_PUSH_SWAP"]
+	path = 06_PUSH_SWAP
+	url = git@github.com:Aztaban/push_swap.git
