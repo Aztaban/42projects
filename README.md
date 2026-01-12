@@ -16,6 +16,9 @@ Each project is located in its own folder in the root directory and is tracked a
 | `03_GET_NEXT_LINE`| **get_next_line**    | Reads one line at a time from a file          |
 | `04_SO_LONG`      | **so_long**          | Simple 2D graphical game using `minilibx`     |
 | `05_PIPEX`        | **pipex**            | Shell-like command piping using `fork`/`exec` |
+| `06_PUSH_SWAP`     | **push_swap**         | Sorting algorithm with two stacks and limited operations   |
+| `07_PHILOSOPHERS`  | **philosophers**      | Dining Philosophers problem (threads, mutexes, timing)     |
+| `08_MINISHELL`     | **minishell**         | A minimal shell (parsing, pipes, redirections, built-ins)  |
 | `99_PISCINE`      | **Piscine Archive**  | Code from the 42 Piscine (non-submodule)      |
 
 ---

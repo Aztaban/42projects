@@ -19,3 +19,9 @@
 [submodule "06_PUSH_SWAP"]
 	path = 06_PUSH_SWAP
 	url = git@github.com:Aztaban/push_swap.git
+[submodule "07_PHILOSOPHERS"]
+	path = 07_PHILOSOPHERS
+	url = git@github.com:Aztaban/philosophers.git
+[submodule "08_MINISHELL"]
+	path = 08_MINISHELL
+	url = git@github.com:Aztaban/minishell_MD.git
