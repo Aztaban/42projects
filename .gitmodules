@@ -25,3 +25,6 @@
 [submodule "08_MINISHELL"]
 	path = 08_MINISHELL
 	url = git@github.com:Aztaban/minishell_MD.git
+[submodule "09_CPP_00-04"]
+	path = 09_CPP_00-04
+	url = git@github.com:Aztaban/CPP_00-04.git

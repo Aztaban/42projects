@@ -19,6 +19,7 @@ Each project is located in its own folder in the root directory and is tracked a
 | `06_PUSH_SWAP`     | **push_swap**         | Sorting algorithm with two stacks and limited operations   |
 | `07_PHILOSOPHERS`  | **philosophers**      | Dining Philosophers problem (threads, mutexes, timing)     |
 | `08_MINISHELL`     | **minishell**         | A minimal shell (parsing, pipes, redirections, built-ins)  |
+| `09_CPP_00_04`     | **CPP Modules 00–04**  | C++ basics → OOP (classes, canonical form, inheritance, polymorphism, templates) |
 | `99_PISCINE`      | **Piscine Archive**  | Code from the 42 Piscine (non-submodule)      |
 
 ---
