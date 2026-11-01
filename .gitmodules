@@ -40,3 +40,6 @@
 [submodule "13_INCEPTION"]
 	path = 13_INCEPTION
 	url = git@github.com:Aztaban/Inception.git
+[submodule "14_WEBSERV"]
+	path = 14_WEBSERV
+	url = git@github.com:Aztaban/webserv.git

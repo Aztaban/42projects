@@ -1,4 +1,4 @@
-# 42projects – My 42 School C Projects Collection
+# 42projects – My 42 School Projects Collection
 
 This repository contains a collection of my projects completed during the 42 school curriculum. Each project is included as a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) and follows the guidelines and structure defined by 42.
 
@@ -19,7 +19,12 @@ Each project is located in its own folder in the root directory and is tracked a
 | `06_PUSH_SWAP`     | **push_swap**         | Sorting algorithm with two stacks and limited operations   |
 | `07_PHILOSOPHERS`  | **philosophers**      | Dining Philosophers problem (threads, mutexes, timing)     |
 | `08_MINISHELL`     | **minishell**         | A minimal shell (parsing, pipes, redirections, built-ins)  |
-| `09_CPP_00_04`     | **CPP Modules 00–04**  | C++ basics → OOP (classes, canonical form, inheritance, polymorphism, templates) |
+| `09_CPP_00-04`     | **CPP Modules 00–04**  | C++ basics and OOP (classes, canonical form, inheritance, polymorphism) |
+| `10_NETPRACTICE`   | **NetPractice**       | Networking exercises covering IP addressing, subnetting, and routing |
+| `11_CUB3D`         | **cub3D**             | Raycasting-based 3D graphical game using `minilibx` |
+| `12_CPP_05-09`     | **CPP Modules 05–09**  | C++ exceptions, casts, templates, containers, and algorithms |
+| `13_INCEPTION`     | **Inception**         | Multi-service infrastructure using Docker and Docker Compose |
+| `14_WEBSERV`       | **webserv**           | HTTP server implemented in C++ |
 | `99_PISCINE`      | **Piscine Archive**  | Code from the 42 Piscine (non-submodule)      |
 
 ---
