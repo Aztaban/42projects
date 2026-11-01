@@ -34,3 +34,6 @@
 [submodule "11_CUB3D"]
 	path = 11_CUB3D
 	url = git@github.com:Aztaban/cub3D_MD.git
+[submodule "12_CPP_05-09"]
+	path = 12_CPP_05-09
+	url = git@github.com:Aztaban/CPP_05-09.git
