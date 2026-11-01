@@ -28,3 +28,6 @@
 [submodule "09_CPP_00-04"]
 	path = 09_CPP_00-04
 	url = git@github.com:Aztaban/CPP_00-04.git
+[submodule "10_NETPRACTICE"]
+	path = 10_NETPRACTICE
+	url = git@github.com:Aztaban/netpractice.git
