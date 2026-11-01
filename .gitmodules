@@ -31,3 +31,6 @@
 [submodule "10_NETPRACTICE"]
 	path = 10_NETPRACTICE
 	url = git@github.com:Aztaban/netpractice.git
+[submodule "11_CUB3D"]
+	path = 11_CUB3D
+	url = git@github.com:Aztaban/cub3D_MD.git
